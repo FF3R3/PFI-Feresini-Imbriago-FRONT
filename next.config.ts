@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const isProd = process.env.NODE_ENV === 'production';
+
+const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/PFI-Feresini-Imbriago-FRONT',
-  assetPrefix: '/PFI-Feresini-Imbriago-FRONT/',
+  basePath: isProd ? '/PFI-Feresini-Imbriago-FRONT' : '',
+  assetPrefix: isProd ? '/PFI-Feresini-Imbriago-FRONT/' : '',
   images: {
     unoptimized: true
   }
