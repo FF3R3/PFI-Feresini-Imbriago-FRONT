@@ -12,7 +12,6 @@ import { CLOUD_PROJECT_NUMBER, MAIN_STAGE_URL } from "../../constants";
  */
 export default function Page() {
   const [sidePanelClient, setSidePanelClient] = useState<MeetSidePanelClient>();
-  const [appState, setAppState] = useState();
 
   // Launches the main stage when the main button is clicked.
   async function startActivity(e: unknown) {

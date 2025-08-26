@@ -3,8 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/sparkle',
-  assetPrefix: '/sparkle/',
+  basePath: '/PFI-Feresini-Imbriago-FRONT',
+  assetPrefix: '/PFI-Feresini-Imbriago-FRONT/',
   images: {
     unoptimized: true
   }
